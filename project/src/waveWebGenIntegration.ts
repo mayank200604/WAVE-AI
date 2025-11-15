@@ -11,7 +11,8 @@ export interface WebGenOptions {
 }
 
 export class WaveWebGenIntegration {
-  private static readonly WEB_GEN_URL = 'http://localhost:5173';
+  // private static readonly WEB_GEN_URL = 'http://localhost:5173';
+  private static readonly WEB_GEN_URL = window.location.origin;
   
   /**
    * Open Wave AI Web Gen in a new tab

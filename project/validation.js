@@ -37,7 +37,7 @@ class ValidationPage {
 
         try {
             // Use the new validation API with comprehensive scoring
-            const response = await fetch('http://localhost:5000/api/validate-idea', {
+            const response = await fetch('http://localhost:5001/api/validate-idea', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

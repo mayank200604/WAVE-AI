@@ -72,7 +72,8 @@ function Projects() {
   const openInCodeGen = (project: Project) => {
     // Store project data for WaveCodeGen to load
     localStorage.setItem('wave_codegen_project', JSON.stringify(project));
-    window.open('http://localhost:5178', '_blank');
+    window.open(window.location.origin, '_blank');
+      
   };
 
   const filteredProjects = projects.filter(project => {

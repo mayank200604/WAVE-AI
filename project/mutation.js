@@ -30,7 +30,7 @@ class MutationPage {
             mutatedTextElement.style.opacity = '0';
         }
         try {
-            const response = await fetch('http://localhost:5000/api/ai-enhanced', {
+            const response = await fetch('http://localhost:5001/api/ai-enhanced', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ idea: this.originalIdea || 'default idea' })
@@ -145,7 +145,7 @@ class MutationPage {
             rethinkBtn.style.opacity = '0.6';
             rethinkBtn.style.pointerEvents = 'none';
             try {
-                const response = await fetch('http://localhost:5000/api/rethink-idea', {
+                const response = await fetch('http://localhost:5001/api/rethink-idea', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ idea: this.originalIdea, variation: Date.now(), count: 3 })
@@ -191,7 +191,7 @@ class MutationPage {
             }
             
             try {
-                const response = await fetch('http://localhost:5000/api/explain-mutation', {
+                const response = await fetch('http://localhost:5001/api/explain-mutation', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ 

@@ -51,7 +51,7 @@ export class SmartChatbotService {
     navigation: {
       'chat history': '/history.html',
       'graveyard': '/graveyard.html', 
-      'main chat': 'http://localhost:5173/chat#/chat',
+      'main chat': '/chat#/chat',
       'projects': '/projects.html',
       'build': '/build.html',
       'validation': '/validation.html'

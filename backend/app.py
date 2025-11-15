@@ -7184,7 +7184,7 @@ if __name__ == '__main__':
     load_datasets()
 
     print("\n==========================================")
-    print("📡 Server will be available at: http://localhost:5000")
+    print("📡 Server will be available at: http://localhost:5001")
     print("==========================================")
     print("🔗 API Endpoints:")
     print("   - POST /api/analyze-idea         → Analyze an idea with live data")
@@ -7217,4 +7217,4 @@ if __name__ == '__main__':
     print("------------------------------------------")
     print("✅ Initialization complete — WAVE AI backend is fully operational.\n")
 
-    app.run(host='0.0.0.0', port=5000, debug=False, use_reloader=False)
+    app.run(host='0.0.0.0', port=5001, debug=False, use_reloader=False)

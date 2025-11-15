@@ -52,7 +52,7 @@ export const googleLogin = async () => {
 export const checkCreditAvailable = async (userId) => {
   if (!userId) return null;
   try {
-    const base = 'http://localhost:5000/api/codegen';
+    const base = 'http://localhost:5001/api/codegen';
     const res = await fetch(`${base}/user-stats?user_id=${encodeURIComponent(userId)}`);
     if (!res.ok) {
       console.warn('checkCreditAvailable: backend returned', res.status);

@@ -186,7 +186,7 @@ function App() {
       
       if (lowerMessage.includes('chat') || lowerMessage.includes('main chat')) {
         setTimeout(() => {
-          window.location.href = 'http://localhost:5173/chat#/chat';
+          window.location.href = '/chat#/chat';
         }, 1000);
         return '💬 **Opening Full Chat Interface...**\n\nTaking you to the complete Wave AI chat experience!';
       }
@@ -264,7 +264,7 @@ function App() {
   const generateIdeas = async (input: string) => {
     setIsGeneratingIdeas(true);
     try {
-      const response = await fetch('http://localhost:5000/api/generate-ideas', {
+      const response = await fetch('http://localhost:5001/api/generate-ideas', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -617,7 +617,7 @@ function App() {
                     localStorage.removeItem('chatMode');
                     localStorage.removeItem('autoMessage');
                     localStorage.removeItem('autoMode');
-                    window.location.href = 'http://localhost:5173/chat#/chat';
+                    window.location.href = '/chat#/chat';
                   }}
                   className="px-4 py-2 bg-[#3a3a3a] hover:bg-[#4a4a4a] text-white rounded-lg transition-all duration-300 hover:shadow-button-glow hover:border hover:border-cyan-400 font-medium text-sm"
                 >

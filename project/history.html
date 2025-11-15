@@ -318,7 +318,7 @@
                     <div class="empty-icon">📝</div>
                     <h3>No chat history yet</h3>
                     <p>Your conversations will appear here once you start chatting with WAVE AI.</p>
-                    <a href="http://localhost:5173/chat#/chat" class="start-chat-btn">Start Chatting</a>
+                    <a href="/chat#/chat" class="start-chat-btn">Start Chatting</a>
                 </div>
             </div>
         </div>
@@ -402,7 +402,7 @@
                     // Store the chat data for the chat page to load
                     localStorage.setItem('loadChatId', chatId);
                     // Navigate to chat page
-                    window.location.href = 'http://localhost:5173/chat#/chat';
+                    window.location.href = '/chat#/chat';
                 }
             } catch (error) {
                 console.error('Error loading chat:', error);

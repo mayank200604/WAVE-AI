@@ -67,7 +67,7 @@ function Chat() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const { popup, showPopup, hidePopup } = usePopup();
 
-  const BACKEND_URL = 'http://localhost:5000';
+  const BACKEND_URL = 'http://localhost:5001';
 
   // Function to generate idea name from message
   const generateIdeaName = (message: string): string => {

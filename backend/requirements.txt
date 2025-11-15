@@ -5,9 +5,10 @@ Flask-HTTPAuth==4.8.0
 python-dotenv==1.0.0
 requests==2.31.0
 pandas==2.0.3
-numpy==1.26.4
-scipy>=1.10.0
-scikit-learn==1.4.2pytrends==4.9.2
+numpy>=2.1
+scipy>=1.14.1
+scikit-learn>=1.6.1
+pytrends==4.9.2
 praw==7.7.1
 sentence-transformers==2.2.2
 sqlalchemy==2.0.23
